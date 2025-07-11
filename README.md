@@ -18,10 +18,13 @@ git clone https://github.com/EvertCP/user-management.git
 cd user-management-app
 ```
 
-### 2. Configura la base de datos MySQL
+### 2. Configura la base de datos MySQL workbench
 - Crea una base de datos llamada `user_management`.
 - Ejecuta el script SQL para crear la tabla `users` 
 ```sql
+CREATE DATABASE IF NOT EXISTS user_management CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE user_management;
+
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(100) NOT NULL,
