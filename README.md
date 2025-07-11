@@ -14,7 +14,7 @@ Aplicación Full Stack para la gestión de usuarios con Node.js, Express, MySQL,
 
 ### 1. Clona el repositorio
 ```bash
-git clone <url-del-repo>
+git clone https://github.com/EvertCP/user-management.git
 cd user-management-app
 ```
 
