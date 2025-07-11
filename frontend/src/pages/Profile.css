@@ -1,0 +1,64 @@
+body {
+  background: #fff;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.profile-container {
+  background: #fff;
+  max-width: 400px;
+  margin: 60px auto 0 auto;
+  border-radius: 22px;
+  padding: 2.5em 2em 2em 2em;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadein 0.9s;
+}
+
+.profile-container h2 {
+  color: #4f3c8d;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+}
+
+.profile-info {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.profile-info p {
+  margin: 0.7em 0;
+  font-size: 1.08em;
+  color: #333;
+}
+
+.profile-container button {
+  padding: 0.9em 1em;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.2em;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.profile-container button:hover {
+  background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    margin: 30px 8px 0 8px;
+    padding: 1.3em 0.7em 1.7em 0.7em;
+  }
+  .profile-container h2 {
+    font-size: 1.3em;
+  }
+}
